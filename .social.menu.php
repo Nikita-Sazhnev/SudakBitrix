@@ -1,0 +1,53 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"Yandex", 
+		"https://www.ya.ru/", 
+		Array(), 
+		Array("SRC"=>"/local/templates/sudak/img/ya.png"), 
+		"" 
+	),
+	Array(
+		"Vk", 
+		"https://vk.com/", 
+		Array(), 
+		Array("SRC"=>"/local/templates/sudak/img/vk.png"), 
+		"" 
+	),
+	Array(
+		"OK", 
+		"https://ok.ru/", 
+		Array(), 
+		Array("SRC"=>"/local/templates/sudak/img/ok.png"), 
+		"" 
+	),
+	Array(
+		"Twitter", 
+		"https://twitter.com/", 
+		Array(), 
+		Array("SRC"=>"/local/templates/sudak/img/tw.png"), 
+		"" 
+	),
+	Array(
+		"Facebook", 
+		"https://facebook.com/", 
+		Array(), 
+		Array("SRC"=>"/local/templates/sudak/img/fb.png"), 
+		"" 
+	),
+	Array(
+		"Mail", 
+		"https://mail.ru/", 
+		Array(), 
+		Array("SRC"=>"/local/templates/sudak/img/warudo.png"), 
+		"" 
+	),
+	Array(
+		"LinkedIn", 
+		"https://linkedin.com", 
+		Array(), 
+		Array("SRC"=>"/local/templates/sudak/img/pencil.png"), 
+		"" 
+	)
+);
+?>
