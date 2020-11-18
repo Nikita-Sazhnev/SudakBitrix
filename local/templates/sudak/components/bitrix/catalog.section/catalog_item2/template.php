@@ -1,4 +1,7 @@
-<?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();/** @var array $arParams */
+<?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
+
+use \Bitrix\Main\Localization\Loc;
+/** @var array $arParams */
 /** @var array $arResult */
 /** @global CMain $APPLICATION */
 /** @global CUser $USER */
@@ -10,6 +13,7 @@
 /** @var string $componentPath */
 /** @var CBitrixComponent $component */
 $this->setFrameMode(true);
+
 ?>	
 <div class="preview-row">
 	
@@ -32,7 +36,7 @@ $this->setFrameMode(true);
 		
 
 								<div class="preview">
-									<div class="preview__box">
+									<div class="preview__box" id="<?=$this->GetEditAreaId($arElement['ID']);?>">
 										
 								
 								<a href="<?=$arElement["DETAIL_PAGE_URL"]?>" target="_blank"><img

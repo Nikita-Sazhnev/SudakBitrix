@@ -5,15 +5,6 @@ $APPLICATION->SetTitle("prop");
 	"bitrix:catalog.section", 
 	"catalog_item2", 
 	array(
-		"PROPERTY_CODE" => array(
-			0 => "LIVING_SPACE",
-			1 => "ROOMS",
-			2 => "ALL_SPACE",
-			3 => "KITHCEN_SPACE",
-			4 => "ALL_FLOORS",
-			5 => "FLOOR",
-			6 => "",
-		),
 		"ACTION_VARIABLE" => "action",
 		"ADD_PICT_PROP" => "-",
 		"ADD_PROPERTIES_TO_BASKET" => "Y",
@@ -32,6 +23,7 @@ $APPLICATION->SetTitle("prop");
 		"CACHE_TIME" => "36000000",
 		"CACHE_TYPE" => "A",
 		"COMPATIBLE_MODE" => "Y",
+		"COMPONENT_TEMPLATE" => "catalog_item2",
 		"CONVERT_CURRENCY" => "N",
 		"CUSTOM_FILTER" => "{\"CLASS_ID\":\"CondGroup\",\"DATA\":{\"All\":\"AND\",\"True\":\"True\"},\"CHILDREN\":[]}",
 		"DETAIL_URL" => "/prop-detail/?ELEMENT=#ELEMENT_ID#",
@@ -81,6 +73,15 @@ $APPLICATION->SetTitle("prop");
 		"PRODUCT_QUANTITY_VARIABLE" => "quantity",
 		"PRODUCT_ROW_VARIANTS" => "[{'VARIANT':'2','BIG_DATA':false},{'VARIANT':'2','BIG_DATA':false},{'VARIANT':'2','BIG_DATA':false},{'VARIANT':'2','BIG_DATA':false},{'VARIANT':'2','BIG_DATA':false},{'VARIANT':'2','BIG_DATA':false}]",
 		"PRODUCT_SUBSCRIPTION" => "Y",
+		"PROPERTY_CODE" => array(
+			0 => "LIVING_SPACE",
+			1 => "ROOMS",
+			2 => "ALL_SPACE",
+			3 => "KITHCEN_SPACE",
+			4 => "ALL_FLOORS",
+			5 => "FLOOR",
+			6 => "",
+		),
 		"PROPERTY_CODE_MOBILE" => "",
 		"RCM_PROD_ID" => $_REQUEST["PRODUCT_ID"],
 		"RCM_TYPE" => "personal",
@@ -114,8 +115,7 @@ $APPLICATION->SetTitle("prop");
 		"USE_ENHANCED_ECOMMERCE" => "N",
 		"USE_MAIN_ELEMENT_SECTION" => "N",
 		"USE_PRICE_COUNT" => "N",
-		"USE_PRODUCT_QUANTITY" => "N",
-		"COMPONENT_TEMPLATE" => "catalog_item2"
+		"USE_PRODUCT_QUANTITY" => "N"
 	),
 	false
 );?><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
